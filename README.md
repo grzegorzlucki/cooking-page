@@ -6,6 +6,11 @@ Cooking with Passion is a clean and modern static website created for culinary e
 
 The website includes a main page with content, sidebar panels with extra resources, and a dedicated order form.
 
+## Live Demo
+
+You can view the live version of the site here:  
+[https://grzegorzlucki.github.io/cooking-page/](https://grzegorzlucki.github.io/cooking-page/)
+
 ## Features
 
 - Responsive and accessible layout using HTML5 and CSS3
