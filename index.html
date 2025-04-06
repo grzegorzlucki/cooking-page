@@ -1,83 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking with Passion</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <link rel="stylesheet" href="css/style.css" />
-    <h1 class="hstyle">
-        Gotowanie
-    </h1>
+  <header>
+    <h1 class="hstyle">Cooking with Passion</h1>
     <nav class="nav">
-        <u1>
-            <li class="nav-item"><a href="a"> Home </a></li>
-            <li class="nav-item"><a href="a"> Kategorie </a></li>
-            <li class="nav-item"><a href="a"> Przepisy </a></li>
-            <li class="nav-item"><a href="a"> Kontakt </a></li>
-        </u1>
+      <ul>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#categories">Categories</a></li>
+        <li class="nav-item"><a href="#recipes">Recipes</a></li>
+        <li class="nav-item"><a href="pages/formularz.html">Contact</a></li>
+      </ul>
     </nav>
-    <h2> Strona główna </h2>
-    <p class="textstyle2">Gotować - przygotowywać gorące posiłki </p>
-    <h3>Menu główne-<a href="podstrony/podstrona.html">podstrona</a></h3>
-    <main>
-        <p class="textstyle1">
-            Strona z większą ilością przepisów: <a href="https://gotowanie.onet.pl/">gotowanie.onet.pl</a>
-            <h4>
-                Dlaczego warto gotować?
-            </h4>
-                <i>Gotowanie to świetna zabawa</i>
-                <br>
-                <img class="photo" src="images/gotowanie.jpg">
-        </p>
-        <p class="textstyle1">
-            <h2>Przepis na naleśniki</h2>
-            <p>Lista składników</p>
-            <li class="box1-item"><a href="a"> Mąka pszenna- 1 szklanka </a></li>
-            <li class="box1-item"><a href="a"> 2 jajka </a></li>
-            <li class="box1-item"><a href="a"> 3/4 szklanki wody (najlepiej gazowanej) </a></li>
-            <li class="box1-item"><a href="a"> Szczypta soli </a></li>
-            <li class="box1-item"><a href="a"> 3 łyżki masła lub oleju roślinnego </a></li>
-            <p>Do wysokiej miski dodajemy mąkę, mleko, wodę gazowaną, jajka i szczyptę soli.<br> Miksujemy przez około minutę do momentu połączenia się składników.
-                <br>
-                Naleśniki smażymy na patelni teflonowej.
-                <br>
-                Następnie przewracamy na drugą stronę i ponownie smażymy do zarumienia naleśników.
-            </p>
+  </header>
 
+  <div class="container">
+    <main class="content">
+      <section class="intro">
+        <h2>Welcome to Our Cooking Website</h2>
+        <p class="textstyle2">Cooking means preparing hot meals with love and care.</p>
+        <p class="textstyle1">
+          For more recipes, visit: 
+          <a href="https://gotowanie.onet.pl/" target="_blank">gotowanie.onet.pl</a>
         </p>
+      </section>
+
+      <section class="highlight">
+        <h3>Why is cooking awesome?</h3>
+        <p><i>Cooking is great fun and brings people together.</i></p>
+        <img class="photo" src="images/gotowanie.jpg" alt="Cooking fun">
+      </section>
+
+      <section id="recipes" class="recipe">
+        <h2>Pancake Recipe</h2>
+        <h4>Ingredients:</h4>
+        <ul class="ingredient-list">
+          <li><a href="#">1 cup wheat flour</a></li>
+          <li><a href="#">2 eggs</a></li>
+          <li><a href="#">3/4 cup sparkling water</a></li>
+          <li><a href="#">A pinch of salt</a></li>
+          <li><a href="#">3 tbsp butter or oil</a></li>
+        </ul>
+        <h4>Instructions:</h4>
+        <p>
+          Add flour, milk, sparkling water, eggs, and salt into a bowl. Mix for 1 minute until smooth.<br>
+          Fry pancakes in a non-stick pan until golden on both sides.
+        </p>
+      </section>
     </main>
-    <aside class="box1">
-        <p class="box-text"><a href="a"> Panel boczny </a></p>
-        <li class="box1-item"><a href="a"> Artykuł-1 </a></li>
-        <li class="box1-item"><a href="a"> Artykuł-2 </a></li>
-        <li class="box1-item"><a href="a"> Artykuł-3 </a></li>
-    </aside>
 
-    <aside class="box2">
-        <p class="box-text"><a href="a"> Wpis </p>
-        <p class="box-in-box1"><a href="a"> <img class="photo2" src="images/pierogi1.jpg">
-             <button class="btn"><a href="podstrony/formularz.html">Kup książkę z przepisami</a></button> 
-        </p>
-        <p class="box-in-box2"><a href="a"> <img class="photo2" src="images/pierogi2.jpg"> Przepisy na pierogi </a></p>
+    <aside class="sidebar">
+      <div class="box">
+        <h3 class="box-text">Sidebar Panel</h3>
+        <ul>
+          <li><a href="#">Article 1</a></li>
+          <li><a href="#">Article 2</a></li>
+          <li><a href="#">Article 3</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3 class="box-text">Post</h3>
+        <div class="box-in-box1">
+          <img class="photo2" src="images/pierogi1.jpg" alt="Pierogi">
+          <a class="btn" href="pages/formularz.html">Buy Recipe Book</a>
+        </div>
+        <div class="box-in-box2">
+          <img class="photo2" src="images/pierogi2.jpg" alt="More Pierogi">
+          <p><a href="#">Pierogi Recipes</a></p>
+        </div>
+      </div>
     </aside>
-    <footer class="footerstyle">
-        <table BORDER CELLSPACING=8>
-            <tr>
-                <th>INFORMACJE</th>
-                <th>OBSŁUGA KLIENTA</th>
-            </tr>
-            <tr>
-                <td>O MNIE</td>
-                <td>KONTAKT</td>
-            </tr>
-            <tr>
-                <td>REGULAMIN</td>
-                <td>KOSZT DOSTAWY</td>
-            </tr>
-      </table>
-    </footer>
+  </div>
+
+  <footer class="footerstyle">
+    <table class="footer-table">
+      <tr>
+        <th>Information</th>
+        <th>Customer Service</th>
+      </tr>
+      <tr>
+        <td>About Me</td>
+        <td>Contact</td>
+      </tr>
+      <tr>
+        <td>Terms & Conditions</td>
+        <td>Shipping Costs</td>
+      </tr>
+    </table>
+  </footer>
 </body>
 </html>

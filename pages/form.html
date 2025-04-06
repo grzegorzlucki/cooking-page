@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    fieldset {
+      border: none;
+      margin-bottom: 2rem;
+    }
+
+    legend {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin: 1rem 0 0.3rem;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[name="kod"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: #ff8c00;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .submit-btn:hover {
+      background-color: #e07b00;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Order Information</legend>
+
+      <label for="name">First Name</label>
+      <input type="text" id="name" name="Imię" required>
+
+      <label for="surname">Last Name</label>
+      <input type="text" id="surname" name="Nazwisko" required>
+
+      <label>Gender:</label>
+      <label><input type="radio" name="Płeć" value="Kobieta"> Female</label>
+      <label><input type="radio" name="Płeć" value="Mężczyzna"> Male</label>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="Wiek" min="0">
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="Miasto">
+
+      <label for="street">Street</label>
+      <input type="text" id="street" name="Ulica">
+
+      <label for="apt">Apartment Number</label>
+      <input type="text" id="apt" name="Numer">
+
+      <label for="zip">Postal Code</label>
+      <input type="text" id="zip" name="kod">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="mail">
+
+      <label>Payment Method:</label>
+      <label><input type="radio" name="payment" value="Przelew"> Bank Transfer</label>
+      <label><input type="radio" name="payment" value="Karta"> Credit Card</label>
+
+      <label for="delivery">Delivery Method</label>
+      <select id="delivery" name="Metoda">
+        <option selected>Parcel Locker</option>
+        <option>Courier</option>
+        <option>In-person Pickup</option>
+      </select>
+
+      <label><input type="checkbox" name="Faktura" value="faktura"> Invoice Needed</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Order Comments</legend>
+      <textarea name="Komentarz" cols="50" rows="5" placeholder="Write your comments here..."></textarea>
+    </fieldset>
+
+    <input type="submit" class="submit-btn" value="Place Order">
+  </form>
+</body>
+</html>
